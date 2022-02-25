@@ -5,7 +5,7 @@ from bot.helpers.sql_helper import BASE, SESSION
 
 
 class gDriveCreds(BASE):
-    __tablename__ = "gDrive2"
+    __tablename__ = "gDrive"
     chat_id = Column(BigInteger, primary_key=True)
     credential_string = Column(LargeBinary)
 
