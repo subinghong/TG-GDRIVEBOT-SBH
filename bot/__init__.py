@@ -22,6 +22,7 @@ try:
     DOWNLOAD_DIRECTORY = os.environ.get("DOWNLOAD_DIRECTORY", "./downloads/")
     G_DRIVE_CLIENT_ID = os.environ.get("G_DRIVE_CLIENT_ID")
     G_DRIVE_CLIENT_SECRET = os.environ.get("G_DRIVE_CLIENT_SECRET")
+    LOGGER.info(DATABASE_URL)
   else:
     from bot.config import config
     BOT_TOKEN = config.BOT_TOKEN
