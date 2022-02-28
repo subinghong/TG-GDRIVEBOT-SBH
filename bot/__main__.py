@@ -11,7 +11,7 @@ import socket
 import _thread
 
 def http_server():
-  HOST, PORT = '', 8888
+  HOST, PORT = '', 80
 
   listen_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
   listen_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -60,5 +60,3 @@ if __name__ == "__main__":
     LOGGER.info('Starting Bot !')
     app.run()
     LOGGER.info('Bot Stopped !')
-
-
