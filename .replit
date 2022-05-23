@@ -1,0 +1,2 @@
+language = "python3"
+run = "python3 -m pip install -r requirements_2.txt && python3 -m bot"

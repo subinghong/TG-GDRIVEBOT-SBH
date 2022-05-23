@@ -1,0 +1,23 @@
+#安装distutils模块
+apt-get install python3-distutils
+#安装setuptools
+wget --no-check-certificate  https://pypi.python.org/packages/source/s/setuptools/setuptools-19.6.tar.gz#md5=c607dd118eae682c44ed146367a17e26
+tar -zxvf setuptools-19.6.tar.gz
+cd setuptools-19.6
+python3 setup.py build
+python3 setup.py install
+#安装pip
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py   # 下载安装脚本
+$ sudo python3 get-pip.py    # 运行安装脚本 注意这里我的环境变量是python3，大家的可能是python
+
+
+#安装warp获得ipv4支持 https://github.com/fscarmen/warp
+#首次运行（[option] [lisence] 这两个参数为可选，可以不设置）
+wget -N https://raw.githubusercontent.com/fscarmen/warp/main/menu.sh && bash menu.sh [option] [lisence]
+#再次运行
+warp [option] [lisence]
+
+#移除掉原requirements.txt中的asyncio，然后设置pyrogram==1.4.7
+#在replit环境下安装asyncio后会导致程序不正常
+#pyrogram==1.0.1版本bot无法正常运行，所以设置为更新的版本pyrogram==1.4.7
+python3 -m pip install -r requirements_2.txt && python3 -m bot

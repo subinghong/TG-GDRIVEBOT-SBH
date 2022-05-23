@@ -1,0 +1,10 @@
+2022-02-28 04:59:21,841 - __main__ - INFO - Starting Bot !
+2022-02-28 05:21:17,513 - __main__ - INFO - Starting Bot !
+2022-02-28 05:35:48,234 - root - INFO - Stop signal received (SIGTERM). Exiting...
+2022-02-28 05:41:18,261 - __main__ - INFO - Starting Bot !
+2022-02-28 05:51:16,543 - __main__ - INFO - Starting Bot !
+2022-02-28 05:52:48,790 - __main__ - INFO - Starting Bot !
+2022-02-28 05:57:51,262 - root - INFO - Stop signal received (SIGTERM). Exiting...
+2022-03-16 06:22:58,989 - bot - INFO - Download:5106007379: AgACAgUAAxkBAAIBJGIxgkI_puK4F40BV25KCb0Q6tdPAAK4rjEbK3LIVI0ljG2JL_ZVAAgBAAMCAAN5AAceBA
+2022-03-16 06:23:01,243 - bot - INFO - Upload: /tmp/IMG-5106007379-292.png
+2022-03-16 06:23:03,994 - bot - INFO - Deleteing: /tmp/IMG-5106007379-292.png
