@@ -8,3 +8,111 @@
 2022-03-16 06:22:58,989 - bot - INFO - Download:5106007379: AgACAgUAAxkBAAIBJGIxgkI_puK4F40BV25KCb0Q6tdPAAK4rjEbK3LIVI0ljG2JL_ZVAAgBAAMCAAN5AAceBA
 2022-03-16 06:23:01,243 - bot - INFO - Upload: /tmp/IMG-5106007379-292.png
 2022-03-16 06:23:03,994 - bot - INFO - Deleteing: /tmp/IMG-5106007379-292.png
+2022-05-23 00:12:22,762 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-226' coro=<Client.handle_updates() done, defined at /opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/client.py:528> exception=OperationalError('database is locked')>
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/client.py", line 530, in handle_updates
+    is_min = (await self.fetch_peers(updates.users)) or (await self.fetch_peers(updates.chats))
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/client.py", line 496, in fetch_peers
+    await self.storage.update_peers(parsed_peers)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/storage/sqlite_storage.py", line 134, in update_peers
+    self.conn.executemany(
+sqlite3.OperationalError: database is locked
+2022-05-23 00:12:24,286 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-247' coro=<Client.handle_updates() done, defined at /opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/client.py:528> exception=OperationalError('database is locked')>
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/client.py", line 530, in handle_updates
+    is_min = (await self.fetch_peers(updates.users)) or (await self.fetch_peers(updates.chats))
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/client.py", line 496, in fetch_peers
+    await self.storage.update_peers(parsed_peers)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/storage/sqlite_storage.py", line 134, in update_peers
+    self.conn.executemany(
+sqlite3.OperationalError: database is locked
+2022-05-23 00:12:25,295 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-255' coro=<Client.handle_updates() done, defined at /opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/client.py:528> exception=OperationalError('database is locked')>
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/client.py", line 530, in handle_updates
+    is_min = (await self.fetch_peers(updates.users)) or (await self.fetch_peers(updates.chats))
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/client.py", line 496, in fetch_peers
+    await self.storage.update_peers(parsed_peers)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/storage/sqlite_storage.py", line 134, in update_peers
+    self.conn.executemany(
+sqlite3.OperationalError: database is locked
+2022-05-23 00:12:25,464 - bot - INFO - Download:5106007379: BQACAgUAAxkBAAIBWmKK0WUzv5GDdAfu9B4sIWcIFqinAAIQBQACcbPoVC8TdeN6B2wDHgQ
+2022-05-23 00:12:27,374 - pyrogram.syncer - CRITICAL - database is locked
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/syncer.py", line 72, in worker
+    await asyncio.wait_for(cls.event.wait(), cls.INTERVAL)
+  File "/usr/lib/python3.8/asyncio/tasks.py", line 501, in wait_for
+    raise exceptions.TimeoutError()
+asyncio.exceptions.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/syncer.py", line 84, in sync
+    await client.storage.save()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/storage/sqlite_storage.py", line 120, in save
+    await self.date(int(time.time()))
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/storage/sqlite_storage.py", line 205, in date
+    return self._accessor(value)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/storage/sqlite_storage.py", line 193, in _accessor
+    return self._get() if value == object else self._set(value)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/storage/sqlite_storage.py", line 187, in _set
+    self.conn.execute(
+sqlite3.OperationalError: database is locked
+2022-05-23 00:12:28,574 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-298' coro=<Client.handle_updates() done, defined at /opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/client.py:528> exception=OperationalError('database is locked')>
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/client.py", line 530, in handle_updates
+    is_min = (await self.fetch_peers(updates.users)) or (await self.fetch_peers(updates.chats))
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/client.py", line 496, in fetch_peers
+    await self.storage.update_peers(parsed_peers)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/storage/sqlite_storage.py", line 134, in update_peers
+    self.conn.executemany(
+sqlite3.OperationalError: database is locked
+2022-05-23 00:12:28,598 - bot - INFO - Upload: /tmp/1c5f5fa07f130097f1763fb5c3f18960.jpg
+2022-05-23 00:12:31,347 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-324' coro=<Client.handle_updates() done, defined at /opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/client.py:528> exception=OperationalError('database is locked')>
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/client.py", line 530, in handle_updates
+    is_min = (await self.fetch_peers(updates.users)) or (await self.fetch_peers(updates.chats))
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/client.py", line 496, in fetch_peers
+    await self.storage.update_peers(parsed_peers)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/storage/sqlite_storage.py", line 134, in update_peers
+    self.conn.executemany(
+sqlite3.OperationalError: database is locked
+2022-05-23 00:12:31,351 - bot - INFO - Deleteing: /tmp/1c5f5fa07f130097f1763fb5c3f18960.jpg
+2022-05-23 00:12:48,398 - pyrogram.syncer - CRITICAL - database is locked
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/syncer.py", line 72, in worker
+    await asyncio.wait_for(cls.event.wait(), cls.INTERVAL)
+  File "/usr/lib/python3.8/asyncio/tasks.py", line 501, in wait_for
+    raise exceptions.TimeoutError()
+asyncio.exceptions.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/syncer.py", line 84, in sync
+    await client.storage.save()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/storage/sqlite_storage.py", line 120, in save
+    await self.date(int(time.time()))
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/storage/sqlite_storage.py", line 205, in date
+    return self._accessor(value)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/storage/sqlite_storage.py", line 193, in _accessor
+    return self._get() if value == object else self._set(value)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/pyrogram/storage/sqlite_storage.py", line 187, in _set
+    self.conn.execute(
+sqlite3.OperationalError: database is locked
+2022-05-23 00:25:22,713 - __main__ - INFO - Bot Stop!
+2022-05-23 00:28:39,615 - __main__ - INFO - Starting Bot !
+2022-05-23 00:29:48,925 - __main__ - INFO - Starting Bot !
+2022-05-23 00:30:57,733 - __main__ - INFO - Starting Bot !
+2022-05-23 00:31:25,179 - bot - INFO - Download:5106007379: BAACAgUAAxkBAAIBYGKK1dzQbKWfSkk0LVOlZWFv7U3rAAJLBAAC5HQ5Vr12G7QekyJ2HgQ
+2022-05-23 00:31:27,574 - bot - INFO - Upload: /tmp/video_2022-04-01_13-51-44_7100722908105050112.mp4
+2022-05-23 00:31:29,538 - bot - INFO - Deleteing: /tmp/video_2022-04-01_13-51-44_7100722908105050112.mp4
+2022-05-23 00:33:00,716 - __main__ - INFO - Starting Bot !
+2022-05-23 00:44:47,612 - bot - INFO - Download:5106007379: BAACAgUAAxkBAAIBYmKK2P5bI2VEw8bSf-GAQL7oBtBCAAJLBAAC5HQ5Vr12G7QekyJ2HgQ
+2022-05-23 00:44:49,942 - bot - INFO - Upload: /tmp/video_2022-04-01_13-51-44_7100726354523607040.mp4
+2022-05-23 00:44:53,125 - bot - INFO - Deleteing: /tmp/video_2022-04-01_13-51-44_7100726354523607040.mp4

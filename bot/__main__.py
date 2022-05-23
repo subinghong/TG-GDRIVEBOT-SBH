@@ -18,7 +18,7 @@ LOGGER = logging.getLogger(__name__)
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 def http_server():
-  HOST, PORT = '', 80
+  HOST, PORT = '0.0.0.0', os.environ.get("PORT", 80)
   listen_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
   listen_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
   listen_socket.bind((HOST, PORT))
